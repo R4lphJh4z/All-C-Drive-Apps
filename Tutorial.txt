@@ -1,0 +1,6 @@
+Here's how to run this file!
+Step 1: Download the .ps1 file.
+Step 2: Now, go to downloads
+Step 3: Right click in the .ps1 file
+Step 4: Find Run with Powershell and click it
+And you run this .ps1 file!!!!!!!
