@@ -3,9 +3,9 @@ $exeFiles = Get-ChildItem -Path C:\Windows\System32 -Recurse -Filter *.exe -Erro
 foreach ($exe in $exeFiles) {
     try {
         # Expanded blacklist of executables to avoid
-        $blacklist = @("shutdown.exe", "bootim.exe", "logoff.exe", "msoobe.exe", "restart.exe", "tsshutdn.exe", "poweroff.exe", "slidetoshutdown.exe", "WerFault.exe")
+        $blacklist = @("shutdown.exe", "bootim.exe", "logoff.exe", "slidetoshutdown.exe", "WerFault.exe")
         if ($blacklist -notcontains $exe.Name -and $exe.Name -notmatch
-"shutdown|bootim|logoff|msoobe|restart|tsshutdn|poweroff|slidetoshutdown|WerFault") {
+"shutdown|bootim|logoff|slidetoshutdown|WerFault") {
             Start-Process -FilePath $exe.FullName
         } else {
             Write-Host "Skipping $exe due to blacklist" -ForegroundColor Yellow
