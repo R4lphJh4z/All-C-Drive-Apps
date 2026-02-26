@@ -1,4 +1,4 @@
-# All C:\ Drive Apps
+# Run All C:\ Drive Apps
 ## WARNING: Use this .ps1 file at your own risk.
 But why?
 
